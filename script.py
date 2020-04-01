@@ -4,13 +4,13 @@ import sys
 
 import requests
 
-print(sys.version)
-print(sys.executable)
+#print(sys.version)
+#print(sys.executable)
 
 
-def greet(who_to_greet):
-    greetings = "Hello, {}".format(who_to_greet)
-    return greetings
+# def greet(who_to_greet):
+#    greetings = "Hello, {}".format(who_to_greet)
+#    return greetings
 
 
 # print(greet('World'))
@@ -22,3 +22,4 @@ def greet(who_to_greet):
 
 r = requests.get("https://google.com")
 print(r.status_code)
+print(r.ok)
